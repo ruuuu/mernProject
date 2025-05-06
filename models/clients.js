@@ -1,7 +1,7 @@
 import { Schema, model } from 'mongoose';
 
 
-const clientSchema  = new Schema({
+const clientSchema  = new Schema({ // создаем модель Клиента  для Mongo
   fio: {
     type: String
   },
