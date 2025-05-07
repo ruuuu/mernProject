@@ -65,7 +65,7 @@ router.delete('/:id', async(req, res) => { // удаление клиента п
 
   try{//                   _id - поле из бд mongo
     await Client.deleteOne({_id: id});
-    res.json(`Client with ${_id} deleted`);    // отдаем ответ сервера
+    res.json(`Client  deleted`);    // отдаем ответ сервера 
   }catch{
     res.status(404).json(`Client with ${_id} not found`);
   }
@@ -76,4 +76,7 @@ router.delete('/:id', async(req, res) => { // удаление клиента п
 
 
 export default router;
-//module.exports = router;
+ // список трнеров
+ // список групповых занятий
+ // список персональных занятий
+
